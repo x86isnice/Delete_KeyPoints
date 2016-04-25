@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+project(Delete_KeyPoints)
+find_package(PCL 1.7 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+add_executable(Delete_KeyPoints Delete_KeyPoints.cpp)
+target_link_libraries(Delete_KeyPoints ${PCL_LIBRARIES})
